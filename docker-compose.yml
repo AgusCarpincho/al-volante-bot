@@ -6,4 +6,4 @@ services:
     env_file:
       - .env
     volumes:
-      - ./replies.log:/app/replies.log
+      - ./replies.txt:/app/replies.txt

@@ -4,7 +4,10 @@ require("dotenv").config();
 const bot = new Telegraf(process.env.BOT_TOKEN);
 
 bot.use((ctx, next) => {
-  console.log(JSON.stringify(ctx.update.message));
+  const loggingInfo = `${new Date().toLocaleString()} | User ${
+    ctx.from.first_name
+  } ${ctx.from.last_name} (@${ctx.from.username}) sending ${ctx.message.text}`;
+  console.log(loggingInfo);
   next();
 });
 
