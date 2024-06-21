@@ -1,0 +1,9 @@
+services:
+  app:
+    build:
+      context: .
+    container_name: al-volante-bot
+    env_file:
+      - .env
+    volumes:
+      - ./replies.log:/app/replies.log

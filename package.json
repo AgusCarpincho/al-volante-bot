@@ -1,0 +1,17 @@
+{
+  "name": "al-volante-bot",
+  "version": "1.0.0",
+  "description": "This is a bot with the purpose to help people in AlVolante website",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node main.js"
+  },
+  "keywords": [],
+  "author": "AgusCarpincho",
+  "license": "MIT License",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "telegraf": "^4.16.3"
+  }
+}
